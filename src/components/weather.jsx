@@ -9,7 +9,7 @@ class Weather extends Component {
 
   
  truncateDecimal = (num) => {
-    let ret = new String(num).split(".");
+    let ret = (num).toString().split(".");
     if (ret.length > 1) ret = ret[0] + "." + ret[1][0];
     else ret = ret[0];
     return ret;
@@ -44,7 +44,7 @@ getLocation = async() => {
             <div className="card">
             <h2>Weather</h2>
         <p>{this.state.response.name}</p>
-        <img src={"http://openweathermap.org/img/w/" + this.state.icon + ".png"}/>
+        <img alt="visual representation of the weather" src={"http://openweathermap.org/img/w/" + this.state.icon + ".png"}/>
         <p>{this.truncateDecimal(this.state.temp) + " °C"}</p>
             </div>
          );

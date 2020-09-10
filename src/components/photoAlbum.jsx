@@ -31,7 +31,7 @@ class PhotoAlbum extends Component {
                     <input type="file" multiple={true} accept="image/*" onChange={this.upload} />
                         <div>
                             {this.state.image.map(i => (
-                                <img src={i}/> ))}
+                                <img alt="" src={i}/> ))}
                         </div>
                 </div>
 

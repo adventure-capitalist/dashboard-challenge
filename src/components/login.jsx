@@ -31,7 +31,7 @@ class Login extends Component {
         <button className="loginButton" onClick={() => this.props.logMeIn(this.state.user)}>
           Log in
         </button>
-        <p>New here? Why not <a style={{color: "yellow"}} onClick={() => this.setState({new: true})}>register</a></p>
+        <p>New here? Why not <span style={{color: "yellow", cursor: "pointer"}} onClick={() => this.setState({new: true})}>register</span></p>
     
         </div> }
         {this.state.new &&
@@ -52,7 +52,7 @@ class Login extends Component {
          <button className="loginButton" onClick={() => this.props.logMeIn(this.state.user)}>
            Register
          </button>
-         <p>Already a user? Why not <a style={{color: "yellow"}} onClick={() => this.setState({new: false})}>Login</a></p>
+         <p>Already a user? Why not <span style={{color: "yellow", cursor: "pointer"}} onClick={() => this.setState({new: false})}>Login</span></p>
      
          </div>
         }

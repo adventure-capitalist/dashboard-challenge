@@ -23,7 +23,7 @@ class Covering extends Component {
         data.payload.map(item => {
            tempObject[item.clothe]++
          });
-        Object.keys(tempObject).map((key, index)=> {
+        Object.keys(tempObject).map((key, index) => {
             let colors = ["red", "orange", "yellow", "green", "blue", "purple"]
            tempArray.push({name: key, value: tempObject[key], color: colors[index]})
         })
